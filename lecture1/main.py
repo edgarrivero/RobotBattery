@@ -11,8 +11,7 @@ env = MatematicasEnv()
 # Ejemplo de un ciclo de interacción con el entorno
 for _ in range(10):
     action = np.random.randint(4)  # Seleccionar una acción entre 0 y 4
-    obs, reward, done, _ = env.step(action)
-    env.render()
+    obs, reward, done, info = env.step(action)
 
 # Reiniciar el entorno
 env.reset()
